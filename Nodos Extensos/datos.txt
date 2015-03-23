@@ -1,0 +1,3 @@
+mapa 1 Gama para comparar con el existente de 99 uniforme
+mapa 1 U calcula en la distancia tambien el area pero el metodo simple no la considera
+mapa 2 U el metodo simple hace el calculo considerando el area

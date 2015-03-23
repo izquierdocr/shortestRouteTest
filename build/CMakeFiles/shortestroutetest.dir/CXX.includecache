@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/izquierdocr/projects/shortestRouteTest/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+algorithm
+-
+math.h
+-
+sstream
+-
+iomanip
+-
+random
+-
+boost/concept_check.hpp
+-
+
