@@ -1,0 +1,496 @@
+Environment with 3
+Locations (ID,Priority,Probability,Area)
+0,0,0.3334,723.773
+1,0,0.3356,384.607
+2,0,0.331,392.018
+Distances table
+0,129.042,131.527,
+129.042,0,255.426,
+131.527,255.426,0,
+Locations ordered by Optimal in 0 seconds
+0,1,2,
+Locations ordered by Worst in 0 seconds
+0,2,1,
+Locations ordered by Optimal Expected in 0 seconds
+0,1,2,
+Locations ordered by Worst Expected in 0 seconds
+0,2,1,
+Locations ordered by Optimal Heuristic in 0 seconds
+0,1,2,
+Locations ordered by Most Probable in 0 seconds
+0,1,2,
+Locations ordered by Closest in 0 seconds
+0,1,2,
+Locations ordered by Random in 0 seconds
+0,2,1,
+Locations ordered by Monte Carlo Tree Search - UCT in 2 seconds
+0,1,2,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,1,2,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,1,2,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,1,2,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,1,2,
+Environment with 4
+Locations (ID,Priority,Probability,Area)
+0,0,0.2538,569.762
+1,0,0.2456,715.957
+2,0,0.2516,657.703
+3,0,0.249,536.403
+Distances table
+0,224.539,294.948,213.581,
+224.539,0,320.718,262.961,
+294.948,320.718,0,189.154,
+213.581,262.961,189.154,0,
+Locations ordered by Optimal in 0 seconds
+0,1,3,2,
+Locations ordered by Worst in 0 seconds
+0,2,1,3,
+Locations ordered by Optimal Expected in 0 seconds
+0,3,2,1,
+Locations ordered by Worst Expected in 0 seconds
+0,2,1,3,
+Locations ordered by Optimal Heuristic in 0 seconds
+0,3,2,1,
+Locations ordered by Most Probable in 0 seconds
+0,2,3,1,
+Locations ordered by Closest in 0 seconds
+0,3,2,1,
+Locations ordered by Random in 0 seconds
+0,2,3,1,
+Locations ordered by Monte Carlo Tree Search - UCT in 2 seconds
+0,3,2,1,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,3,1,2,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,3,2,1,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,3,2,1,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,3,2,1,
+Environment with 5
+Locations (ID,Priority,Probability,Area)
+0,0,0.2011,431.297
+1,0,0.1978,399.606
+2,0,0.2027,706.501
+3,0,0.2006,735.149
+4,0,0.1978,648.936
+Distances table
+0,86.9411,115.142,110.267,226.125,
+86.9411,0,146.581,181.953,297.811,
+115.142,146.581,0,171.652,286.681,
+110.267,181.953,171.652,0,206.468,
+226.125,297.811,286.681,206.468,0,
+Locations ordered by Optimal in 0 seconds
+0,1,2,3,4,
+Locations ordered by Worst in 0 seconds
+0,2,4,1,3,
+Locations ordered by Optimal Expected in 0 seconds
+0,1,2,3,4,
+Locations ordered by Worst Expected in 0 seconds
+0,4,2,3,1,
+Locations ordered by Optimal Heuristic in 0 seconds
+0,1,2,3,4,
+Locations ordered by Most Probable in 0 seconds
+0,2,3,1,4,
+Locations ordered by Closest in 0 seconds
+0,1,2,3,4,
+Locations ordered by Random in 0 seconds
+0,1,2,3,4,
+Locations ordered by Monte Carlo Tree Search - UCT in 4 seconds
+0,1,2,3,4,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,1,3,2,4,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,1,2,3,4,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,1,2,3,4,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,1,2,4,3,
+Environment with 6
+Locations (ID,Priority,Probability,Area)
+0,0,0.1651,545.947
+1,0,0.1683,415.641
+2,0,0.166,375.349
+3,0,0.1696,329.427
+4,0,0.1643,607.382
+5,0,0.1667,285.991
+Distances table
+0,119.941,173.137,160.569,181.196,204.439,
+119.941,0,202.823,193.154,219.581,242.823,
+173.137,202.823,0,105.083,141.61,164.024,
+160.569,193.154,105.083,0,97.3259,113.113,
+181.196,219.581,141.61,97.3259,0,62.5564,
+204.439,242.823,164.024,113.113,62.5564,0,
+Locations ordered by Optimal in 0 seconds
+0,1,2,3,4,5,
+Locations ordered by Worst in 0 seconds
+0,5,2,4,1,3,
+Locations ordered by Optimal Expected in 0 seconds
+0,2,3,5,4,1,
+Locations ordered by Worst Expected in 0 seconds
+0,4,1,5,2,3,
+Locations ordered by Optimal Heuristic in 0 seconds
+0,5,3,2,1,4,
+Locations ordered by Most Probable in 0 seconds
+0,3,1,5,2,4,
+Locations ordered by Closest in 0 seconds
+0,1,3,4,5,2,
+Locations ordered by Random in 0 seconds
+0,4,1,3,2,5,
+Locations ordered by Monte Carlo Tree Search - UCT in 5 seconds
+0,3,5,2,1,4,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,1,3,2,4,5,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,1,3,5,2,4,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,1,3,5,4,2,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,5,3,2,1,4,
+Environment with 7
+Locations (ID,Priority,Probability,Area)
+0,0,0.1397,705.347
+1,0,0.1476,564.943
+2,0,0.1407,665.311
+3,0,0.144,532.903
+4,0,0.1449,640.046
+5,0,0.1392,512.964
+6,0,0.1439,564.863
+Distances table
+0,194.108,324.267,363.25,374.137,214.096,126.267,
+194.108,0,271.64,311.451,323.167,163.125,128.953,
+324.267,271.64,0,184.551,197.924,172.468,249.397,
+363.25,311.451,184.551,0,135.397,212.622,289.551,
+374.137,323.167,197.924,135.397,0,214.397,292.983,
+214.096,163.125,172.468,212.622,214.397,0,131.355,
+126.267,128.953,249.397,289.551,292.983,131.355,0,
+Locations ordered by Optimal in 0 seconds
+0,6,1,5,2,3,4,
+Locations ordered by Worst in 0 seconds
+0,4,1,2,6,3,5,
+Locations ordered by Optimal Expected in 0 seconds
+0,6,1,5,3,4,2,
+Locations ordered by Worst Expected in 0 seconds
+0,4,1,2,6,3,5,
+Locations ordered by Optimal Heuristic in 0 seconds
+0,6,5,1,3,4,2,
+Locations ordered by Most Probable in 0 seconds
+0,1,4,3,6,2,5,
+Locations ordered by Closest in 0 seconds
+0,6,1,5,2,3,4,
+Locations ordered by Random in 0 seconds
+0,5,2,3,1,4,6,
+Locations ordered by Monte Carlo Tree Search - UCT in 6 seconds
+0,6,1,5,3,4,2,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,6,1,5,2,3,4,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,6,1,5,2,3,4,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,6,5,1,3,4,2,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,6,5,3,4,1,2,
+Environment with 8
+Locations (ID,Priority,Probability,Area)
+0,0,0.1211,732.518
+1,0,0.1327,272.084
+2,0,0.1207,657.291
+3,0,0.1249,548.023
+4,0,0.1279,675.968
+5,0,0.1237,495.96
+6,0,0.1249,710.842
+7,0,0.1241,430.107
+Distances table
+0,182.314,226.184,302.966,271.782,149.556,236.941,256.581,
+182.314,0,153.882,233.978,350.823,141.598,172.468,316.569,
+226.184,153.882,0,178.078,388.551,176.912,129.64,354.297,
+302.966,233.978,178.078,0,456.635,244.167,141.882,422.38,
+271.782,350.823,388.551,456.635,0,322.622,410.421,193.978,
+149.556,141.598,176.912,244.167,322.622,0,187.184,277.012,
+236.941,172.468,129.64,141.882,410.421,187.184,0,367.468,
+256.581,316.569,354.297,422.38,193.978,277.012,367.468,0,
+Locations ordered by Optimal in 0 seconds
+0,4,7,5,1,2,6,3,
+Locations ordered by Worst in 0 seconds
+0,3,4,6,7,2,5,1,
+Locations ordered by Optimal Expected in 0 seconds
+0,5,1,2,3,6,7,4,
+Locations ordered by Worst Expected in 0 seconds
+0,6,4,2,7,3,5,1,
+Locations ordered by Optimal Heuristic in 0 seconds
+0,1,5,7,3,6,2,4,
+Locations ordered by Most Probable in 0 seconds
+0,1,4,3,6,7,5,2,
+Locations ordered by Closest in 0 seconds
+0,5,1,2,6,3,7,4,
+Locations ordered by Random in 0 seconds
+0,4,1,6,3,2,7,5,
+Locations ordered by Monte Carlo Tree Search - UCT in 6 seconds
+0,1,5,7,4,3,6,2,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,5,1,2,6,7,4,3,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,5,1,2,6,3,7,4,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,1,5,7,4,3,6,2,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,1,5,7,4,3,2,6,
+Environment with 9
+Locations (ID,Priority,Probability,Area)
+0,0,0.1077,319.011
+1,0,0.1176,623.628
+2,0,0.1081,746.197
+3,0,0.1088,453.178
+4,0,0.1131,729.087
+5,0,0.1137,300.481
+6,0,0.1119,540.199
+7,0,0.1069,628.738
+8,0,0.1122,337.199
+Distances table
+0,172.451,93.2549,350.605,354.534,312.35,155.853,107.953,208.794,
+172.451,0,245.132,411.718,415.647,373.463,216.966,164.966,269.907,
+93.2549,245.132,0,444.86,448.789,406.605,249.694,198.108,303.049,
+350.605,411.718,444.86,0,155.397,105.355,249.794,297.895,163.865,
+354.534,415.647,448.789,155.397,0,86.598,252.48,300.581,166.551,
+312.35,373.463,406.605,105.355,86.598,0,208.297,256.397,122.368,
+155.853,216.966,249.694,249.794,252.48,208.297,0,107.699,107.569,
+107.953,164.966,198.108,297.895,300.581,256.397,107.699,0,155.255,
+208.794,269.907,303.049,163.865,166.551,122.368,107.569,155.255,0,
+Locations ordered by Optimal in 0 seconds
+0,2,1,7,6,8,3,5,4,
+Locations ordered by Worst in 0 seconds
+0,4,1,5,2,8,7,3,6,
+Locations ordered by Optimal Expected in 0 seconds
+0,6,8,5,3,4,7,1,2,
+Locations ordered by Worst Expected in 0 seconds
+0,4,2,3,1,5,7,6,8,
+Locations ordered by Optimal Heuristic in 0 seconds
+0,8,5,3,6,7,1,2,4,
+Locations ordered by Most Probable in 0 seconds
+0,1,5,4,8,6,3,2,7,
+Locations ordered by Closest in 0 seconds
+0,2,7,6,8,5,4,3,1,
+Locations ordered by Random in 0 seconds
+0,6,8,4,2,7,3,1,5,
+Locations ordered by Monte Carlo Tree Search - UCT in 6 seconds
+0,8,5,3,4,6,7,1,2,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,2,7,6,1,8,5,4,3,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,2,7,6,8,5,4,3,1,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,8,5,3,4,6,7,1,2,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,8,5,3,6,7,1,2,4,
+Environment with 10
+Locations (ID,Priority,Probability,Area)
+0,0,0.0968,718.176
+1,0,0.1043,344.972
+2,0,0.0979,424.848
+3,0,0.0999,357.444
+4,0,0.1005,465.506
+5,0,0.1022,323.439
+6,0,0.1008,295.818
+7,0,0.0998,649.284
+8,0,0.0965,348.844
+9,0,0.1013,539.696
+Distances table
+0,90.8701,133.64,113.267,217.669,265.338,223.539,205.669,131.841,125.184,
+90.8701,0,214.811,191.167,265.451,313.12,253.096,235.225,160.569,206.355,
+133.64,214.811,0,126.426,304.238,351.907,314.25,296.38,225.48,83.3554,
+113.267,191.167,126.426,0,222.74,270.409,232.752,214.882,163.314,122.456,
+217.669,265.451,304.238,222.74,0,165.953,183.74,184,204.096,288.853,
+265.338,313.12,351.907,270.409,165.953,0,200.108,207.409,252.593,337.35,
+223.539,253.096,314.25,232.752,183.74,200.108,0,119.841,194.983,302.108,
+205.669,235.225,296.38,214.882,184,207.409,119.841,0,173.87,280.995,
+131.841,160.569,225.48,163.314,204.096,252.593,194.983,173.87,0,216.196,
+125.184,206.355,83.3554,122.456,288.853,337.35,302.108,280.995,216.196,0,
+Locations ordered by Optimal in 4 seconds
+0,1,9,2,3,8,7,6,4,5,
+Locations ordered by Worst in 4 seconds
+0,4,1,5,9,6,2,7,3,8,
+Locations ordered by Optimal Expected in 4 seconds
+0,1,8,6,5,4,3,2,9,7,
+Locations ordered by Worst Expected in 4 seconds
+0,7,9,4,2,5,1,6,3,8,
+Locations ordered by Optimal Heuristic in 4 seconds
+0,1,8,6,5,3,2,9,4,7,
+Locations ordered by Most Probable in 0 seconds
+0,1,5,9,6,4,3,7,2,8,
+Locations ordered by Closest in 0 seconds
+0,1,8,3,9,2,7,6,4,5,
+Locations ordered by Random in 0 seconds
+0,6,3,7,5,8,2,1,4,9,
+Locations ordered by Monte Carlo Tree Search - UCT in 9 seconds
+0,1,8,6,5,4,3,2,9,7,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,1,3,9,2,8,7,4,6,5,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,1,8,6,7,5,4,3,9,2,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,1,8,6,5,4,3,2,9,7,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,1,6,5,8,3,2,9,4,7,
+Environment with 11
+Locations (ID,Priority,Probability,Area)
+0,0,0.0889,297.762
+1,0,0.0926,748.491
+2,0,0.0933,714.251
+3,0,0.0876,310.289
+4,0,0.0911,515.559
+5,0,0.0915,384.52
+6,0,0.094,692.971
+7,0,0.0897,414.732
+8,0,0.0909,301.253
+9,0,0.0883,409.532
+10,0,0.0921,703.332
+Distances table
+0,72.9706,181.326,265.681,217.853,278.225,336.35,282.895,337.297,211.74,362.948,
+72.9706,0,115.569,199.924,152.096,212.468,270.593,217.137,271.539,145.983,297.191,
+181.326,115.569,0,207.853,164.539,231.539,289.664,236.208,290.61,165.054,316.262,
+265.681,199.924,207.853,0,201.309,270.794,328.919,275.463,329.865,204.309,355.517,
+217.853,152.096,164.539,201.309,0,175.51,233.635,180.179,234.581,117.64,260.233,
+278.225,212.468,231.539,270.794,175.51,0,75.6274,153.823,208.225,151.539,233.877,
+336.35,270.593,289.664,328.919,233.635,75.6274,0,209.534,263.936,206.421,289.588,
+282.895,217.137,236.208,275.463,180.179,153.823,209.534,0,78.1838,153.794,80.6396,
+337.297,271.539,290.61,329.865,234.581,208.225,263.936,78.1838,0,206.125,75.6569,
+211.74,145.983,165.054,204.309,117.64,151.539,206.421,153.794,206.125,0,235.434,
+362.948,297.191,316.262,355.517,260.233,233.877,289.588,80.6396,75.6569,235.434,0,
+Locations ordered by Optimal in 52 seconds
+0,1,2,3,4,9,6,5,7,8,10,
+Locations ordered by Worst in 52 seconds
+0,7,3,6,2,8,1,10,4,5,9,
+Locations ordered by Optimal Expected in 52 seconds
+0,3,9,5,7,8,10,4,2,1,6,
+Locations ordered by Worst Expected in 52 seconds
+0,10,1,6,2,7,3,8,4,5,9,
+Locations ordered by Optimal Heuristic in 52 seconds
+0,3,8,7,5,9,4,2,1,6,10,
+Locations ordered by Most Probable in 0 seconds
+0,6,2,1,10,5,4,8,7,9,3,
+Locations ordered by Closest in 0 seconds
+0,1,2,4,9,5,6,7,8,10,3,
+Locations ordered by Random in 0 seconds
+0,6,2,3,1,5,4,9,7,10,8,
+Locations ordered by Monte Carlo Tree Search - UCT in 14 seconds
+0,9,5,8,7,3,1,4,2,6,10,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,1,2,4,9,3,5,7,6,8,10,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,1,2,4,9,5,6,7,8,10,3,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,1,9,5,6,8,7,10,3,4,2,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,3,8,5,7,9,4,2,1,6,10,
+Environment with 12
+Locations (ID,Priority,Probability,Area)
+0,0,0.0814,377.263
+1,0,0.0837,295.603
+2,0,0.0887,657.191
+3,0,0.0796,296.82
+4,0,0.0823,622.021
+5,0,0.0837,603.875
+6,0,0.086,601.57
+7,0,0.0836,626.197
+8,0,0.082,415.918
+9,0,0.0823,470.155
+10,0,0.0822,281.504
+11,0,0.0845,544.798
+Distances table
+0,48,290.451,243.853,169.953,107.054,225.64,190.184,197.569,163.527,105.284,251.426,
+48,0,250.966,204.368,130.054,139.752,271.811,236.355,244.154,210.113,152.284,297.598,
+290.451,250.966,0,145.681,192.167,329.794,506.605,471.149,486.12,452.078,393.836,532.392,
+243.853,204.368,145.681,0,140.255,277.882,455.522,420.066,435.037,400.995,343.581,481.309,
+169.953,130.054,192.167,140.255,0,160.485,364.221,328.765,339.463,305.422,248.421,390.007,
+107.054,139.752,329.794,277.882,160.485,0,268.137,232.681,243.794,209.752,152.752,293.924,
+225.64,271.811,506.605,455.522,364.221,268.137,0,78.3553,143.782,142.338,191.924,62.4853,
+190.184,236.355,471.149,420.066,328.765,232.681,78.3553,0,102.983,104.468,154.054,105.87,
+197.569,244.154,486.12,435.037,339.463,243.794,143.782,102.983,0,109.368,160.61,166.326,
+163.527,210.113,452.078,400.995,305.422,209.752,142.338,104.468,109.368,0,129.811,168.125,
+105.284,152.284,393.836,343.581,248.421,152.752,191.924,154.054,160.61,129.811,0,217.297,
+251.426,297.598,532.392,481.309,390.007,293.924,62.4853,105.87,166.326,168.125,217.297,0,
+Locations ordered by Optimal in 701 seconds
+0,1,2,3,4,5,10,9,8,7,6,11,
+Locations ordered by Worst in 701 seconds
+0,6,4,7,1,11,5,8,2,9,3,10,
+Locations ordered by Optimal Expected in 701 seconds
+0,1,10,9,8,7,6,11,5,4,3,2,
+Locations ordered by Worst Expected in 701 seconds
+0,11,2,6,4,7,3,8,5,9,1,10,
+Locations ordered by Optimal Heuristic in 701 seconds
+0,1,10,8,9,3,4,5,11,6,7,2,
+Locations ordered by Most Probable in 0 seconds
+0,2,6,11,1,5,7,4,9,10,8,3,
+Locations ordered by Closest in 0 seconds
+0,1,4,3,2,5,10,9,7,6,11,8,
+Locations ordered by Random in 0 seconds
+0,6,5,11,8,10,7,1,2,4,9,3,
+Locations ordered by Monte Carlo Tree Search - UCT in 15 seconds
+0,1,10,8,9,4,2,3,5,7,6,11,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,1,5,10,9,4,7,8,6,11,3,2,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,1,4,3,2,5,10,9,7,6,11,8,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,1,10,9,8,7,6,11,3,4,5,2,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,1,10,3,8,9,11,6,7,5,4,2,
+Environment with 13
+Locations (ID,Priority,Probability,Area)
+0,0,0.0749,347.37
+1,0,0.0765,523.275
+2,0,0.0831,415.199
+3,0,0.0706,694.769
+4,0,0.0789,431.26
+5,0,0.0762,287.841
+6,0,0.0782,509.547
+7,0,0.0784,442.37
+8,0,0.0778,630.497
+9,0,0.0764,537.115
+10,0,0.0746,722.418
+11,0,0.076,626.582
+12,0,0.0784,460.804
+Distances table
+0,84.0416,156.723,175.551,204.853,113.728,207.078,172.096,338.865,306.924,269.711,127.326,317.782,
+84.0416,0,241.35,260.179,289.48,154.924,210.711,136.811,303.581,271.64,234.012,212.368,282.498,
+156.723,241.35,0,154.924,79.8823,164.664,281.203,286.066,454.493,422.551,389.066,148.439,433.409,
+175.551,260.179,154.924,0,103.468,177.279,293.818,306.137,474.564,442.622,409.137,170.267,453.48,
+204.853,289.48,79.8823,103.468,0,210.38,326.919,332.196,500.622,468.681,435.196,194.569,479.539,
+113.728,154.924,164.664,177.279,210.38,0,117.125,177.669,349.978,318.037,284.966,150.953,328.895,
+207.078,210.711,281.203,293.818,326.919,117.125,0,97.0122,367.865,335.924,303.681,255.191,346.782,
+172.096,136.811,286.066,306.137,332.196,177.669,97.0122,0,289.066,257.125,224.882,256.74,267.983,
+338.865,303.581,454.493,474.564,500.622,349.978,367.865,289.066,0,156.581,316.652,426.752,167.439,
+306.924,271.64,422.551,442.622,468.681,318.037,335.924,257.125,156.581,0,285.539,395.64,58.9706,
+269.711,234.012,389.066,409.137,435.196,284.966,303.681,224.882,316.652,285.539,0,359.326,293.154,
+127.326,212.368,148.439,170.267,194.569,150.953,255.191,256.74,426.752,395.64,359.326,0,405.255,
+317.782,282.498,433.409,453.48,479.539,328.895,346.782,267.983,167.439,58.9706,293.154,405.255,0,
+Locations ordered by Optimal in 8500 seconds
+0,11,2,4,3,5,6,7,1,10,12,9,8,
+Locations ordered by Worst in 8500 seconds
+0,6,1,5,10,4,12,3,9,11,8,2,7,
+Locations ordered by Optimal Expected in 8500 seconds
+0,2,4,5,6,7,1,12,9,8,10,11,3,
+Locations ordered by Worst Expected in 8500 seconds
+0,8,3,10,11,9,4,12,2,6,1,7,5,
+Locations ordered by Optimal Heuristic in 8500 seconds
+0,5,2,4,7,6,1,12,9,8,11,3,10,
+Locations ordered by Most Probable in 0 seconds
+0,2,4,7,12,6,8,1,9,5,11,10,3,
+Locations ordered by Closest in 0 seconds
+0,1,7,6,5,11,2,4,3,10,9,12,8,
+Locations ordered by Random in 0 seconds
+0,12,3,10,2,11,4,1,7,6,9,8,5,
+Locations ordered by Monte Carlo Tree Search - UCT in 3 seconds
+0,5,2,4,3,1,7,6,12,9,8,10,11,
+Locations ordered by Expected Distance Fixed in 0 seconds
+0,1,5,11,2,7,3,4,6,10,9,12,8,
+Locations ordered by Expected Distance Murrieta in 0 seconds
+0,1,7,6,5,2,4,3,11,10,9,12,8,
+Locations ordered by Expected Distance Simple in 0 seconds
+0,5,6,7,1,2,4,3,11,12,9,8,10,
+Locations ordered by Partial Optimal Heuristic in 0 seconds
+0,5,2,4,7,6,12,9,1,11,3,8,10,
+
