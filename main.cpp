@@ -22,8 +22,63 @@ string mapDataBase;
 vector<double> areas;
 
 
+vector <double> extractProbability(string str, int maxRoom) {
+  //string str must follow format objectNumber-orderRoom1,orderRoom2,orderRoom3,etc
+  vector <double> A;
+  size_t separatorPos = str.find(',',0);
+  while (separatorPos!=string::npos && separatorPos<str.length()) {
+    size_t separatorPos2 = str.find(',',separatorPos+1);
+    if (separatorPos2==string::npos) separatorPos2=str.length();
+    string numberSTR=str.substr(separatorPos+1,separatorPos2-(separatorPos+1));
+    double number = atof(numberSTR.c_str());
+    A.push_back( number );
+    separatorPos=separatorPos2;
+  }
+  return A;
+}
+
+void loadUserProbabilities(string object, int numRooms, vector<double> &p){
+  int numObjects=72;  // ######################################## Beacuse those are in the file
+  const char *objectvector[] = {"apple","shoe","coffee","clothe","laptop","bread","pen","book","bed sheet","cellphone","spoon","fork","glass of water","handbag","food","towel","chair","medicine","tv remote","coke","broom","mop","key","scissor","comb","bible","ac remote","cell charger","tablet","plate","backpack","baby bottle","headphone","nail clipper","jacket","hand cream","inhaler","cosmetic bag","fly swatter","pillow","blanket","milk","shirt","sock","cup","glasses","knife","soap","coat","pumpkin","orange","paddle","ball","dinosaur","bottle","toy car","frying pan","cd","dvd","videogame","toy","potato chips","cracker","cookie","extinguisher","phone","printer","potty","bookshelf","trash","fridge","softener"};
+  vector<string> objects(objectvector, objectvector+numObjects);
+  
+  vector<string>::iterator it;
+  it = find (objects.begin(), objects.end(), object);
+  if (it == objects.end()) {cout << "Object not found in file" << endl; exit (EXIT_FAILURE);}
+  size_t tmpPos = it - objects.begin();
+  int objectPosition=tmpPos+1;
+  
+  ifstream inputFile("/home/izquierdocr/projects/internetQuery/data/bordaUserPb.txt");
+  string lineA;
+  for (int i=0; i<objectPosition; i++) {
+    getline(inputFile, lineA); //This do not check if the file is incomplete or unstructured
+  }
+  p=extractProbability(lineA, numRooms);
+  reverse(p.begin(),p.end());
+}
 
 
+//Load from file
+void loadRoomProbabilities(string object, int numRooms, vector<double> &p, string fileName){
+  int numObjects=72;  // ######################################## Beacuse those are in the file
+  const char *objectvector[] = {"apple","shoe","coffee","clothe","laptop","bread","pen","book","bed sheet","cellphone","spoon","fork","glass of water","handbag","food","towel","chair","medicine","tv remote","coke","broom","mop","key","scissor","comb","bible","ac remote","cell charger","tablet","plate","backpack","baby bottle","headphone","nail clipper","jacket","hand cream","inhaler","cosmetic bag","fly swatter","pillow","blanket","milk","shirt","sock","cup","glasses","knife","soap","coat","pumpkin","orange","paddle","ball","dinosaur","bottle","toy car","frying pan","cd","dvd","videogame","toy","potato chips","cracker","cookie","extinguisher","phone","printer","potty","bookshelf","trash","fridge","softener"};
+  vector<string> objects(objectvector, objectvector+numObjects);
+  
+  vector<string>::iterator it;
+  it = find (objects.begin(), objects.end(), object);
+  if (it == objects.end()) {cout << "Object not found in file" << endl; exit (EXIT_FAILURE);}
+  size_t tmpPos = it - objects.begin();
+  int objectPosition=tmpPos+1;
+  
+  ifstream inputFile(fileName);
+    string lineA;
+  for (int i=0; i<objectPosition; i++) {
+    getline(inputFile, lineA); //This do not check if the file is incomplete or unstructured
+  }
+  p=extractProbability(lineA, numRooms);
+}
+
+//Generate syntethic (random) probabilities
 void generateRoomProbabilities(string distributionType, int nintervals, vector<double> &p){
   
   const bool showGraph=false;
@@ -119,7 +174,7 @@ void loadMapData(int numNodes, int numMap, string mapType, MatVector &distancesT
 
 
 
-string buildEnvironment(vector<locationNode> &locationList, MatVector &distancesTable, int numNodes, string mapType, string probabilityDistribution) {
+string buildEnvironment(vector<locationNode> &locationList, MatVector &distancesTable, int numNodes, string mapType, string probabilityDistribution, string object) {
   ostringstream stream2String;
   string msg;
   
@@ -134,11 +189,16 @@ string buildEnvironment(vector<locationNode> &locationList, MatVector &distances
   }
   
   vector<double> roomProbabilities;
-  generateRoomProbabilities(probabilityDistribution, numNodes, roomProbabilities);
+  if (probabilityDistribution!="File")
+    generateRoomProbabilities(probabilityDistribution, numNodes, roomProbabilities); //Generated with random
+  else {
+    loadRoomProbabilities(object, numNodes, roomProbabilities, "/home/izquierdocr/projects/internetQuery/data/experimentQueryWeightedProbabilityWebPb.txt"); //Loaded from files
+    //loadRoomProbabilities(object, numNodes, roomProbabilities, "/home/izquierdocr/projects/internetQuery/data/bordaUserPb.txt"); //Loaded from users
+  }
   for (int i=0; i<numNodes; i++) {
     locationNode location;
     location.ID=i;
-    location.objectProbability=roomProbabilities[numNodes-i-1];
+    location.objectProbability=roomProbabilities[numNodes-i-1]; //Only for evaluating cross probabilities. This can be changed to [i]. Choosen only for having other order than 0,1,2...
     location.priority=0;
     locationList.push_back(location);
   }
@@ -233,6 +293,17 @@ void evaluateRoute(vector<locationNode> locationList, MatVector distancesTable, 
 
 //evaluateRouteExpectedDistance
 double evaluateRouteExpectedDistance(vector<locationNode> locationList, MatVector distancesTable) {
+  /*
+  //Change probabilities to those generated by users
+  //Only for evaluating cross probabilities - Comment in normal use
+  vector<double> p;
+  loadUserProbabilities("cup", 10, p);
+  for (int i=0; i<locationList.size(); i++) {
+    locationList[i].objectProbability=p[locationList[i].ID];
+  }
+  */
+  
+  
   double accumulatedDistance=sqrt(locationList[0].area);
   double expectedDistance=accumulatedDistance*locationList[0].objectProbability;
   for (int i=1; i<locationList.size(); i++) {
@@ -282,9 +353,10 @@ int main(int argc, char **argv) {
   int minMap=1;
   int maxMap=5;
   selectedMap=5; //Map to be evaluated
-  string probabilityDistribution="Exponential"; // Uniform, Normal, Gamma, Exponential
-  int minNodes=3;	//Minimum 3 Nodes
-  int maxNodes=13;	//it has been tested a optimal policy to 14 nodes in 2 days of computing time. 13 nodes in 2 hours. 12 nodes 10 minutes
+  string probabilityDistribution="Exponential"; // Uniform, Normal, Gamma, Exponential, File
+  string object="coke"; // Only useful with File
+  int minNodes=10;	//Minimum 3 Nodes
+  int maxNodes=10;	//it has been tested a optimal policy to 14 nodes in 2 days of computing time. 13 nodes in 2 hours. 12 nodes 10 minutes
   int minStartingNode=0;
   int maxStartingNode=0;
   int startingNode=0;
@@ -296,7 +368,8 @@ int main(int argc, char **argv) {
   string outputFileNameData;
   string outputFileNameExpected;
   ostringstream num2FormatString;
-  num2FormatString << "HEUNA" << setfill('0') << setw(2) << minNodes << "-" << setfill('0') << setw(2) << maxNodes << "maps" << setfill('0') << setw(2) << minMap << "-" << setfill('0') << setw(2) << maxMap  << "strt" << setfill('0') << setw(2) << minStartingNode << "-" << setfill('0') << setw(2) << maxStartingNode << "prob" << probabilityDistribution[0];
+  //"coke","knife","milk","tv remote","cup"
+  num2FormatString << "cokeWEB-WEB" << setfill('0') << setw(2) << minNodes << "-" << setfill('0') << setw(2) << maxNodes << "maps" << setfill('0') << setw(2) << minMap << "-" << setfill('0') << setw(2) << maxMap  << "strt" << setfill('0') << setw(2) << minStartingNode << "-" << setfill('0') << setw(2) << maxStartingNode << "prob" << probabilityDistribution[0];
   outputFileNameRunnings="experiment-" + environmentType + num2FormatString.str()+"-Running.txt";
   outputFileNameData="experiment-" + environmentType + num2FormatString.str()+"-Data.txt";
   outputFileNameExpected="experiment-" + environmentType + num2FormatString.str()+"-Expected.txt";
@@ -350,7 +423,7 @@ int main(int argc, char **argv) {
     vector<locationNode> locationList;
     MatVector distancesTable;
     
-    fileStreamData << buildEnvironment(locationList, distancesTable, numNodes, environmentType, probabilityDistribution);
+    fileStreamData << buildEnvironment(locationList, distancesTable, numNodes, environmentType, probabilityDistribution, object);
     
     optimalDistance=maxDistance(distancesTable,locationList)*(numNodes+1);
     optimalExpectedDistance=optimalDistance;
